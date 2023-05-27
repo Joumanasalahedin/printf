@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 {
 	va_list args;
 	int chars = 0;
-	long unsigned int i;	
+	unsigned long int i;
 
 	convert specs[] = {
 		{"%d", print_int},
