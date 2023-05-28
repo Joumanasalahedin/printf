@@ -3,6 +3,9 @@
 
 #include <stdarg.h>
 #include <stdlib.h>
+#include <unistd.h>
+
+int (*get_function(char c))( va_list ap);
 
 /**
   * struct format - matches specifiers to functions
