@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-int (*get_function(char c))( va_list ap);
 int printf_s(va_list list);
 int printf_c(va_list list);
 int printf_p(va_list list);
