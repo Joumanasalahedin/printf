@@ -22,5 +22,6 @@ int printf_s(va_list list);
 int printf_c(va_list list);
 int printf_p(va_list list);
 int print_int(va_list args);
+int print_binary(va_list args);
 
 #endif
