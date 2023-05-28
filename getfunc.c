@@ -13,11 +13,11 @@ int (*get_function(char c))(va_list ap)
 
 	convert con[] = {
 
-		{"c", print_int},
+		{"c", printf_c},
 
-		{"s", print_int},
+		{"s", printf_s},
 
-		{"%", print_int},
+		{"%", printf_p},
 
 		{"d", print_int},
 

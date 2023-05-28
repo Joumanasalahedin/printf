@@ -6,7 +6,9 @@
 #include <unistd.h>
 
 int (*get_function(char c))( va_list ap);
-
+int printf_s(va_list list);
+int printf_c(va_list list);
+int printf_p(va_list list);
 /**
   * struct format - matches specifiers to functions
   * @id: pointer to one of the specifiers
