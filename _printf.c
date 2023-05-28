@@ -12,7 +12,14 @@ int _printf(const char *format, ...)
 	int chars = 0;
 	unsigned long int i;
 
-
+	convert specs[] = {
+		{"%c", printf_c},
+		{"%s", printf_s},
+		{"%", printf_p},
+		{"%d", print_int},
+		{"%i", print_int},
+	};
+	
 	va_start(args, format);
 
 	while (*format)

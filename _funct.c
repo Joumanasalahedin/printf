@@ -2,7 +2,7 @@
 
 /**
  * printf_c - print char
- *@list: arg
+ * @list: arg
  *
  * Return: 0.
  */
@@ -41,6 +41,7 @@ int printf_s(va_list list)
 		{
 			_putchar(id[t]);
 		}
+	}
 
 	return (t);
 
