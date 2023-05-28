@@ -17,7 +17,7 @@ int printf_c(va_list list)
 
 /**
  * printf_s - print string
- *@list: arg 
+ *@list: arg
  *
  * Return: 0.
  */
@@ -29,21 +29,29 @@ int printf_s(va_list list)
 	char *idNULL = "(null)";
 
 	if (id == NULL)
-		 for (t = 0; idNULL[t] != '\0'; t++)
-			 _putchar(idNULL[t]);
-	else 
-		for (t = 0; id[t] != '\0'; t++;)
+	{
+		for (t = 0; idNULL[t] != '\0'; t++)
+		{
+			_putchar(idNULL[t]);
+		}
+	}
+	else
+	{
+		for (t = 0; id[t] != '\0'; t++)
+		{
 			_putchar(id[t]);
+		}
 
 	return (t);
 
 }
 /**
- * printf_ p - print %
+ * printf_p - print %
  * @list: arg
  *
  * Return: 0.
  */
+
 int printf_p(va_list list)
 {
 	(void)list;
