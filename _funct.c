@@ -53,10 +53,11 @@ int printf_s(va_list list)
  * Return: 0.
  */
 
-int printf_p(va_list list)
+int printf_p(va_list list )
 {
 	(void)list;
-	_putchar('%');
+
+	_putchar(37);
 
 	return (1);
 }

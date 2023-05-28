@@ -15,11 +15,10 @@ int _printf(const char *format, ...)
 	convert specs[] = {
 		{"%c", printf_c},
 		{"%s", printf_s},
-		{"%", printf_p},
+		{"%%", printf_p},
 		{"%d", print_int},
 		{"%i", print_int},
 	};
-	
 	va_start(args, format);
 
 	while (*format != '\0')
