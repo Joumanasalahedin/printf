@@ -25,5 +25,7 @@ int print_int(va_list args);
 int print_binary(va_list args);
 void write_buffer(int *buffer, int len, va_list list);
 int *create_buffer(void);
+void hexadecimal(char c);
+int print_non_printable(va_list args);
 
 #endif
