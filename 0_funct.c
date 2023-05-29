@@ -47,13 +47,13 @@ int printf_s(va_list list)
 
 }
 /**
- * printf_p - print %
+ * printf_37 - print %
  * @list: arg
  *
  * Return: 0.
  */
 
-int printf_p(va_list list)
+int printf_37(va_list list)
 {
 	(void)list;
 

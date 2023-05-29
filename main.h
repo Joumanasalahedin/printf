@@ -20,8 +20,10 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int printf_s(va_list list);
 int printf_c(va_list list);
-int printf_p(va_list list);
+int printf_37(va_list list);
 int print_int(va_list args);
 int print_binary(va_list args);
+void write_buffer(int *buffer, int len, va_list list);
+int *create_buffer(void);
 
 #endif
