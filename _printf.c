@@ -19,6 +19,7 @@ int _printf(const char *format, ...)
 		{"%d", print_int},
 		{"%i", print_int},
 		{"%b", print_binary},
+		{"%S", print_strs},
 	};
 	va_start(args, format);
 
