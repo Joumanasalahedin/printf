@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 		{"%%", printf_37},
 		{"%d", print_int}, {"%r", print_rev},
 		{"%i", print_int}, {"%b", print_binary},
-		{"%S", print_non_printable}, {"%p", print_pointer},
+		{"%S", print_non_printable}, {"%p", print_pointer}, {"%R", print_rot13},
 	};
 	va_start(args, format);
 

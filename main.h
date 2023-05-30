@@ -35,5 +35,6 @@ int countOc(unsigned int digit);
 int print_pointer(va_list args);
 int _strlen(char *str);
 int print_rev(va_list args);
+int print_rot13(va_list args);
 
 #endif
