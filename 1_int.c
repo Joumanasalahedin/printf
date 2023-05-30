@@ -9,10 +9,9 @@
 int print_int(va_list args)
 {
 	int num = va_arg(args, int);
-	int chars = 0, temp;
-	int digits = 0;
-	int index = 0, i;
+	int chars = 0, temp, digits = 0, index = 0, i;
 	char *arr;
+	int plus = 0, space = 0;
 
 	if (num < 0)
 	{
@@ -20,7 +19,13 @@ int print_int(va_list args)
 		num = -num;
 		chars++;
 	}
-	temp = num;
+	if (num >= 0)
+	{
+		if (plus)
+			_putchar('+'), chars++;
+		else if (space)
+			_putchar(' '), chars++;
+	} temp = num;
 	if (num == 0)
 	{
 		_putchar(48);
@@ -28,10 +33,8 @@ int print_int(va_list args)
 	}
 	while (temp != 0)
 	{
-		temp /= 10;
-		digits++;
+		temp /= 10, digits++;
 	}
-
 	arr = (char *)malloc(digits * sizeof(char));
 	if (arr == NULL)
 		return (chars);
@@ -40,12 +43,9 @@ int print_int(va_list args)
 		arr[index++] = 48 + (num % 10);
 		num /= 10;
 	}
-
 	for (i = digits - 1; i >= 0; i--)
 	{
-		_putchar(arr[i]);
-		chars++;
-	}
-	free(arr);
+		_putchar(arr[i]), chars++;
+	} free(arr);
 	return (chars);
 }

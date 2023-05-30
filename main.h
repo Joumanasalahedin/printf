@@ -37,4 +37,7 @@ void print_hexlow(unsigned int n, int *sz);
 void print_hexupp(unsigned int n, int *sz);
 int print_pointer(va_list args);
 int _strlen(char *str);
+int print_rev(va_list args);
+int print_rot13(va_list args);
+
 #endif
