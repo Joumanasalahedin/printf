@@ -13,13 +13,16 @@ int _printf(const char *format, ...)
 	unsigned long int i;
 
 	convert specs[] = {
-		{"%c", printf_c},
-		{"%s", printf_s},
+		{"%c", printf_c}, {"%s", printf_s},
 		{"%%", printf_37},
 		{"%d", print_int},
 		{"%i", print_int},
 		{"%b", print_binary},
+<<<<<<< HEAD
 		{"%S", print_strs},
+=======
+		{"%S", print_non_printable},
+>>>>>>> e5b50654a4f3e47f55051d8dbfae3cdfd43d56fd
 	};
 	va_start(args, format);
 
