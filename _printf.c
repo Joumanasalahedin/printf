@@ -13,17 +13,19 @@ int _printf(const char *format, ...)
 	unsigned long int i;
 
 	convert specs[] = {
-		{"%c", printf_c}, {"%s", printf_s},
-		{"%%", printf_37},
-		{"%d", print_int},
-		{"%i", print_int},
+		{"%c", printf_c}, {"%s", printf_s}, {"%%", printf_37},
+		{"%d", print_int}, {"%i", print_int},
 		{"%b", print_binary},
 		{"%u", print_u}, {"%o", print_Oct},
 		{"%x", print_hexlo}, {"%X", print_hexup},
 		{"%S", print_non_printable}, {"%p", print_pointer},
+<<<<<<< HEAD
 		{"%d", print_int}, {"%r", print_rev},
 		{"%i", print_int}, {"%b", print_binary},
 		{"%S", print_non_printable}, {"%p", print_pointer}, {"%R", print_rot13},
+=======
+		{"%r", print_rev}, {"%R", print_rot13},
+>>>>>>> de753931293f782f808eb42cf5501dc3746fcded
 	};
 	va_start(args, format);
 
