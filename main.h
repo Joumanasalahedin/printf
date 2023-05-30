@@ -35,6 +35,8 @@ void print_Un(unsigned int num, unsigned int *size);
 void print_Oc(unsigned int n, int *sz);
 void print_hexlow(unsigned int n, int *sz);
 void print_hexupp(unsigned int n, int *sz);
+void hex_address(unsigned long int address, int *sz);
+void print_Num(int un, int *sz);
 int print_pointer(va_list args);
 int _strlen(char *str);
 int print_rev(va_list args);
