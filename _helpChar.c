@@ -1,27 +1,6 @@
 #include "main.h"
 
 /**
- * _strlen - count char in string
- * @s: string
- *
- * Return: strings
- */
-
-int _strlen(char *s)
-{
-	int count;
-
-	count = 0;
-
-	while (s[count] != '\0')
-	{
-		count++;
-	}
-
-	return (count);
-}
-
-/**
  * countOc - digits
  * @digit: number
  *
