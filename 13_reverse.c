@@ -23,6 +23,6 @@ int print_rev(va_list args)
 	{
 		_putchar(str[i]);
 	}
-	
+
 	return (len);
 }
