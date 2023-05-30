@@ -2,23 +2,31 @@
 
 /**
  * print_un - print unsigned decimal
- * @num: list contain unsigned
+ * @list: arg
  *
- * Retuer 
- 
+ * Return: chars printed
+ */
+int print_un(va_list list)
+{
+	int digit;
+	int sum = 0;
+	unsigned int digits = sum;
 
+	unsigned int num = va_arg(list, unsigned int);
 
+	if (sum < 1)
+	{
+		_putchar('0');
+		return (1);
+	}
 
+	digit = print_N(num);
+	if (digit == 1)
+	{
+		sum += countD(digit);
+	}
+	else
 
-
-
-
-
-
-
-
-
- `%u`: Unsigned decimal integer
-- `%o`: Octal integer
-- `%x`: Hexadecimal integer (lowercase letters for a-f)
-- `%X`: Hexadecimal integer (uppercase letters for A-F)
+		sum = -1;
+	return (sum);
+}

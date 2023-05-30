@@ -31,4 +31,8 @@ int print_N(unsigned int n);
 int countD(unsigned int digits);
 int _strlen(char *s);
 int countOc(unsigned int digit);
+
+int print_un(va_list list);
+int print_pointer(va_list args);
+int _strlen(char *str);
 #endif

@@ -9,7 +9,7 @@
 
 int printf_c(va_list list)
 {
-	int c = va_arg(list, int);
+	char c = va_arg(list, int);
 
 	_putchar(c);
 	return (1);
@@ -17,35 +17,36 @@ int printf_c(va_list list)
 
 /**
  * printf_s - print string
- *@list: arg
+ * @list: arg
  *
  * Return: 0.
  */
 
 int printf_s(va_list list)
 {
-	int t;
-	char *id = va_arg(list, char *);
-	char *idNULL = "(null)";
+	char *str;
+	int i, len;
 
-	if (id == NULL)
+	str = va_arg(list, char *);
+
+	if (str == NULL)
 	{
-		for (t = 0; idNULL[t] != '\0'; t++)
-		{
-			_putchar(idNULL[t]);
-		}
+		str = "(null)";
+		len = _strlen(str);
+		for (i = 0; i < len; i++)
+			_putchar(str[i]);
+		return (len);
 	}
+
 	else
 	{
-		for (t = 0; id[t] != '\0'; t++)
-		{
-			_putchar(id[t]);
-		}
+		len = _strlen(str);
+		for (i = 0; i < len; i++)
+			_putchar(str[i]);
+		return (len);
 	}
-
-	return (t);
-
 }
+
 /**
  * printf_37 - print %
  * @list: arg

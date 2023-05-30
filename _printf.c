@@ -18,11 +18,16 @@ int _printf(const char *format, ...)
 		{"%d", print_int},
 		{"%i", print_int},
 		{"%b", print_binary},
+		{"%u", print_un},
+<<<<<<< HEAD
 <<<<<<< HEAD
 		{"%S", print_strs},
 =======
 		{"%S", print_non_printable},
 >>>>>>> e5b50654a4f3e47f55051d8dbfae3cdfd43d56fd
+=======
+		{"%S", print_non_printable}, {"%p", print_pointer},
+>>>>>>> 015b1ec1916f26360d15b965b7c10c3eba41892b
 	};
 	va_start(args, format);
 
