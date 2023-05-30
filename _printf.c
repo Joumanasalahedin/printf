@@ -18,6 +18,8 @@ int _printf(const char *format, ...)
 		{"%d", print_int},
 		{"%i", print_int},
 		{"%b", print_binary},
+		{"%u", print_u}, {"%o", print_Oct},
+		{"%x", print_hexlo}, {"%X", print_hexup},
 		{"%S", print_non_printable}, {"%p", print_pointer},
 	};
 	va_start(args, format);
@@ -42,7 +44,6 @@ int _printf(const char *format, ...)
 			_putchar(*format);
 			chars++;
 		}
-
 		format++;
 	}
 	va_end(args);

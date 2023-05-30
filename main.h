@@ -22,16 +22,19 @@ int printf_s(va_list list);
 int printf_c(va_list list);
 int printf_37(va_list list);
 int print_int(va_list args);
+int print_hexup(va_list X);
+int print_hexlo(va_list x);
+int print_Oct(va_list o);
+int print_u(va_list u);
 int print_binary(va_list args);
 void write_buffer(int *buffer, int len, va_list list);
 int *create_buffer(void);
 void hexadecimal(char c);
 int print_non_printable(va_list args);
-int print_N(unsigned int n);
-int countD(unsigned int digits);
-int _strlen(char *s);
-int countOc(unsigned int digit);
-
+void print_Un(unsigned int num, unsigned int *size);
+void print_Oc(unsigned int n, int *sz);
+void print_hexlow(unsigned int n, int *sz);
+void print_hexupp(unsigned int n, int *sz);
 int print_pointer(va_list args);
 int _strlen(char *str);
 #endif
