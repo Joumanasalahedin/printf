@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 		{"%d", print_int},
 		{"%i", print_int},
 		{"%b", print_binary},
-		{"%S", print_non_printable},
+		{"%S", print_non_printable}, {"%p", print_pointer},
 	};
 	va_start(args, format);
 
