@@ -18,7 +18,7 @@ int print_rot13(va_list args)
 		found = 0;
 		for (n = 0; n < 52; n++)
 		{
-			if (str[a] == rot13[n])
+			if (str[a] == alph[n])
 			{
 				_putchar(rot13[n]);
 				chars += 1;
