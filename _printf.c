@@ -15,9 +15,8 @@ int _printf(const char *format, ...)
 	convert specs[] = {
 		{"%c", printf_c}, {"%s", printf_s},
 		{"%%", printf_37},
-		{"%d", print_int},
-		{"%i", print_int},
-		{"%b", print_binary},
+		{"%d", print_int}, {"%r", print_rev},
+		{"%i", print_int}, {"%b", print_binary},
 		{"%S", print_non_printable}, {"%p", print_pointer},
 	};
 	va_start(args, format);
