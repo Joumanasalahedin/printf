@@ -25,13 +25,12 @@ int _printf(const char *format, ...)
 		{"%r", print_rev}, {"%R", print_rot13},
 	};
 	va_start(args, format);
-
+	if (format == NULL)
+		return (-1);
 	while (*format != '\0')
 	{
 		if (*format == '%')
-		{
-			format++;
-
+		{ format++;
 			for (i = 0; i < sizeof(specs) / sizeof(specs[0]); i++)
 			{
 				if (specs[i].id[1] == *format)
@@ -40,8 +39,7 @@ int _printf(const char *format, ...)
 					break;
 				}
 			}
-		}
-		else
+		} else
 		{
 			_putchar(*format);
 			chars++;
