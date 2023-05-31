@@ -19,6 +19,9 @@ int _printf(const char *format, ...)
 		{"%u", print_u}, {"%o", print_Oct},
 		{"%x", print_hexlo}, {"%X", print_hexup},
 		{"%S", print_non_printable}, {"%p", print_pointer},
+		{"%d", print_int}, {"%r", print_rev},
+		{"%i", print_int}, {"%b", print_binary},
+		{"%S", print_non_printable}, {"%p", print_pointer}, {"%R", print_rot13},
 		{"%r", print_rev}, {"%R", print_rot13},
 	};
 	va_start(args, format);
